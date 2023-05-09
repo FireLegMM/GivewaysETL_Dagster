@@ -2,7 +2,7 @@ from dagster import ScheduleDefinition, DefaultScheduleStatus, Definitions
 from . import jobs as j
 
 
-# Define schedules:
+# Define schedules for jobs:
 
 def_schedule = ScheduleDefinition(job=j.def_job, cron_schedule="33 0/3 * * *")
 
@@ -23,4 +23,5 @@ deals_schedule = ScheduleDefinition(
 all_schedules = [def_schedule, deals_schedule, stores_schedule]
 
 # Dagster project definitions:
+
 defs = Definitions(assets=j.all_assets, schedules=all_schedules, jobs=j.jobs_list)
