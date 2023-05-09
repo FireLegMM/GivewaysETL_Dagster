@@ -35,8 +35,6 @@ deals_job = define_asset_job(
     description="Gets all deals from cheapshark.com API",
 )
 
-# test_job = define_asset_job(name="test_job", selection=AssetSelection.groups("test"))
-
-
 # Add job to list below:
+
 jobs_list = [all_job, def_job, stores_job, deals_job]

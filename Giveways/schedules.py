@@ -23,4 +23,5 @@ deals_schedule = ScheduleDefinition(
 all_schedules = [def_schedule, deals_schedule, stores_schedule]
 
 # Dagster project definitions:
+
 defs = Definitions(assets=j.all_assets, schedules=all_schedules, jobs=j.jobs_list)
