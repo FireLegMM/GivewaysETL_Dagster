@@ -24,5 +24,5 @@ def store_data_to_sql(store_data_get):
         if_exists="replace",
         index=False,
         dtype={"images": types.JSON},
-        chunksize=1000
+        chunksize=1000,
     )
