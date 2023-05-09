@@ -1,4 +1,4 @@
-# Giveways_ETL
+# GivewaysETL_Dagster
 
 ## Table of contents:
 
