@@ -2,7 +2,7 @@ from dagster import ScheduleDefinition, DefaultScheduleStatus, Definitions
 from . import jobs as j
 
 
-# Define schedules:
+# Define schedules for jobs:
 
 def_schedule = ScheduleDefinition(job=j.def_job, cron_schedule="33 0/3 * * *")
 

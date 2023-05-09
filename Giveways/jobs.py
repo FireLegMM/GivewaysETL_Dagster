@@ -2,7 +2,6 @@ from dagster import (
     define_asset_job,
     AssetSelection,
     load_assets_from_modules,
-    Definitions,
 )
 
 # Make sure all files with assets are imported:
@@ -13,7 +12,7 @@ all_assets = load_assets_from_modules([stores, deals])
 # Define jobs:
 
 all_job = define_asset_job(
-    description="All assets included",
+    description="All assets included, for UI visibility",
     name="AllAssets",
     selection=AssetSelection.all(),
 )

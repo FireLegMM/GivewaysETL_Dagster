@@ -2,15 +2,17 @@
 
 ## Table of contents:
 
-1. [Description](#Description)
-2. [Tools](#Tools)
-3. [Getting started](#getting-started)
-   - [Dagster UI](#dagster-ui)
-   - [PostgreSQL database](#postgresql-database)
+- [GivewaysETL\_Dagster](#givewaysetl_dagster)
+  - [Table of contents:](#table-of-contents)
+  - [Description](#description)
+  - [Tools](#tools)
+  - [Getting started](#getting-started)
+    - [Dagster UI](#dagster-ui)
+    - [PostgreSQL database](#postgresql-database)
 
 ## Description
 
-This project is a small implementation of the Dagster orchestration tool into a data pipeline. The data flow consists of retrieving data from the CheapsharkAPI, processing it using Python scripts, and storing it in a PostgreSQL database.
+This project is a small implementation of the Dagster orchestration tool into a data pipeline. The data flow consists of retrieving data from public CheapsharkAPI, processing it using Python scripts, and storing it in a PostgreSQL database. Both Dagster process and PostgreSQL database are hosted within dedicated Docker containers.
 
 ![Tools](./images/giveways.png)
 
@@ -39,7 +41,7 @@ cd Giveways
 ```
 3. Build and start the Docker containers using docker-compose:
 
-Note: It is highly recommended to start this project using Docker containers. Running the project without Docker containers may result in errors during pipeline execution due to configuration issues. Docker provides a standardized and isolated environment for running the project, ensuring consistent and reproducible results.
+*Note: It is highly recommended to start this project using Docker containers. Running the project outside Docker containers may result in errors during pipeline execution due to configuration issues. Docker provides a standardized and isolated environment for running the project, ensuring consistent and reproducible results.*
 
 ```bash
 docker-compose up -d
@@ -60,5 +62,5 @@ USERNAME = "dagster"
 PASSWORD = "dagster"
 DATABASE_HOST = "localhost"
 PORT = "5432"
-DATABASE_NAME = "db_wh"
+DATABASE_NAME = "giveways"
 ```
