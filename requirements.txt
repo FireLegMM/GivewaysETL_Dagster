@@ -1,0 +1,7 @@
+dagster==1.2.6
+pandas==2.0.0
+Requests==2.30.0
+SQLAlchemy==1.4.47
+dagit==1.2.6
+psycopg2-binary==2.9.1
+dagster-postgres==0.18.6
