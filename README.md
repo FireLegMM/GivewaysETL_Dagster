@@ -31,7 +31,7 @@ The following tools are used in this project:
 1. First clone project repository:
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/FireLegMM/GivewaysETL_Dagster.git
 ```
 
 2. Go into main project directory:
